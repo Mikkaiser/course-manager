@@ -4,11 +4,14 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import CourseListComponent from './courses/course-list.component';
+import { FreestyleComponent } from './freestyle/freestyle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CourseListComponent
+    CourseListComponent,
+    FreestyleComponent,
+
   ],
   imports: [
     BrowserModule,

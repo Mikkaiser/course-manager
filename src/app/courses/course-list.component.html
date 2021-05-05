@@ -9,16 +9,18 @@
             <th>Duration</th>
             <th>Rating</th>
             <th>Release</th>
+            <th>Options</th>
         </tr>
     </thead>
     <tbody>
-        <tr *ngfor="let course of courses">
-            <td> {{}} </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+        <tr *ngFor="let course of courses">
+            <td> {{course.imageUrl}} </td>
+            <td> {{course.name}} </td>
+            <td> {{course.price | currency}} </td>
+            <td> {{course.code}} </td>
+            <td> {{course.duration}} </td>
+            <td> {{course.rating}} </td>
+            <td> {{course.release}} </td>
             <td></td>
         </tr>
     </tbody>
