@@ -1,0 +1,10 @@
+<div class="container">
+  <h2 class="mt-4 mb-4 font-weight-bold">Teachers</h2>
+  <ul *ngFor = 'let teacher of teachers'>
+    <li class="bg-grey"> Identifier: <b>{{teacher.id}}</b> </li>
+    <li> Name: <b>{{teacher.name}}</b> </li>
+    <li class="bg-grey"> Graduate in: <b>{{teacher.graduateIn}}</b> </li>
+    <li> Age: <b>{{teacher.age}}</b> </li>
+    <hr>
+  </ul>
+</div>
