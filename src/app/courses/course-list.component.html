@@ -14,12 +14,14 @@
     </thead>
     <tbody>
         <tr *ngFor="let course of courses">
-            <td> {{course.imageUrl}} </td>
+            <td> <img height="30px"  width="30px" [src] ="course.imageUrl" alt="http image"> </td>
             <td> {{course.name}} </td>
             <td> {{course.price | currency}} </td>
             <td> {{course.code}} </td>
             <td> {{course.duration}} </td>
-            <td> {{course.rating}} </td>
+            <td>
+              <app-star [rating]="course.rating"></app-star>
+            </td>
             <td> {{course.release}} </td>
             <td></td>
         </tr>
